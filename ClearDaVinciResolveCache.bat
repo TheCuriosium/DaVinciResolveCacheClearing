@@ -1,9 +1,16 @@
 @Echo Off
+REM This .bat file is provided to clear the DaVinci Resolve 17.3.2 Optimized Media Cache, as no
+REM method is provided in this version to clear the cache.
+REM This .bat file works best if you make a Windows shortcut to it on your desktop. Then whenever
+REM you feel you need to clear the Optimized Media Cache, just make sure DaVinci Resolve is not
+REM running, and double-click the shortcut.
+
 REM BEGIN CONFIGURATION
 REM IF YOU MOVE THE CACHE FILES LOCATION, YOU MUST CONFIGURE THESE TWO LINES!
 set drcachedrive=C:
 set drcachefolder=%USERPROFILE%\Videos\CacheClip
 REM END CONFIGURATION
+
 echo If DaVinci resolve is running, close it now!
 echo IF DAVINCI RESOLVE IS RUNNING, CLOSE IT NOW!!
 echo.
